@@ -1,6 +1,9 @@
 ---
 title: "A3: SPL Library Checkouts"
 output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ## Library Checkout Trends for author Susan Cain
@@ -11,13 +14,14 @@ output: html_document
 
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
-
-For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a dataset collected by the _City of Seattle Open Data Portal_ from January 2012 to January 2023. Cain is best known for her books *Quiet: The Power of Introverts* (published on January 24, 2012) and *Bittersweet: How Sorrow and Longing Make Us Whole*, (published on April 5, 2022). As an avid reader, introvert and melancholic individual, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life. I wanted to analyze these trends to draw conclusions about possible reasons why a certain month or year had a spike or drop in library checkouts.
+For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a dataset collected by the *City of Seattle Open Data Portal* from January 2012 to January 2023.
+Cain is best known for her books *Quiet: The Power of Introverts* (published on January 24, 2012) and *Bittersweet: How Sorrow and Longing Make Us Whole*, (published on April 5, 2022).
+As an avid reader, introvert and melancholic individual, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life.
+I wanted to analyze these trends to draw conclusions about possible reasons why a certain month or year had a spike or drop in library checkouts.
 
 ### References
-Seattle. (n.d.). Checkouts by Title. Retrieved from Seattle Open Data
 
+Seattle.(n.d.). Checkouts by Title. Retrieved from Seattle Open Data Portal
 
 ### Summary Information
 
@@ -25,80 +29,81 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 These will likely be calculated using your DPLYR skills, answering questions such as:
 
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
+-   What is the average number of checkouts for each item?
+-   What is the month or year with the most/least checkouts for a book that you're interested in?
+-   What is the month or year with the most/least checkouts for ebooks?
+-   How has the number of print book checkouts changed over time?
 
 Feel free to calculate and report values that you find relevant.
 
 ### The Dataset
 
 **Who collected/published the data? The data was collected and published**\
-The date was collected by the _City of Seattle Open Data Portal_ and is updated monthly. This specific data set was collected from January 2012 to January 2023.
+The date was collected by the *City of Seattle Open Data Portal* and is updated monthly.
+This specific data set was collected from January 2012 to January 2023.
 **What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?**\
-The parameters of the data are Material Type, Title, Publisher, Number of Checkouts and Date, 
-**How was the data collected or generated?**\
-Based on the _City of Seattle Open Data Portal_ FAQ, data comes from multiple current and historical sources. Item checkouts of physical copies of books are sourced from the _Legrady artwork_ archives while digital items are sourced from media vendors, which include _Overdrive, hoopla, Freegal and RBDigital_.
+The parameters of the data are Material Type, Title, Publisher, Number of Checkouts and Date, **How was the data collected or generated?**\
+Based on the *City of Seattle Open Data Portal* FAQ, data comes from multiple current and historical sources.
+Item checkouts of physical copies of books are sourced from the *Legrady artwork* archives while digital items are sourced from media vendors, which include *Overdrive, hoopla, Freegal and RBDigital*.
 **Why was the data collected?**\
 The data was collected to observe and compare trends between books written and published my author Susan Cain.
 **What, if any, ethical questions do you need to consider when working with this data?**\
 Will observing checkout data from these psychological books expose and stereotype certain individuals?
 **What are possible limitations or problems with this data?(at least 200 words**\
-A major limitation from this data set is that it only collects data from library checkouts that were done at a Seattle Public Library, which is one of the few libraries to make its circulation data public. It does not take into account data of private libraries, data in the United States or on a more global scale. This data set also does not include data of purchases made at a bookstore, which is where a large quantity of people obtain books.  This can alter the way the data is presented by not providing an accurate representation of trends and success for this author. This data also cuts off on January 1, 2023, which can also affect the accuracy of the data because this book was recently advertised by Oprah Winfrey in her March Book Club pick.
-
+A major limitation from this data set is that it only collects data from library checkouts that were done at a Seattle Public Library, which is one of the few libraries to make its circulation data public. It does not take into account data of private libraries, data in the United States or on a more global scale. This data set also does not include data of purchases made at a bookstore, which is where a large quantity of people obtain books. This can alter the way the data is presented by not providing an accurate representation of trends and success for this author. This data also cuts off on January 1, 2023, which can also affect the accuracy of the data because this book was recently advertised by Oprah Winfrey in her March Book Club pick.
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+Include a chart.
+Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The first chart that you will create and include will show the trend over time of your variable/topic/interest.
+Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!).
+Here are some requirements to help guide your design:
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
+-   Show more than one, but fewer than \~10 trends
+    -   For example, two books, or 5 different mediums
+-   You must have clear x and y axis labels
+-   The chart needs a clear title 
+-   You need a legend for your different line colors and a clear - legend title In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
 
 When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
-```
+\`\`\``{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}`
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+Include a chart.
+Make sure to describe why you included the chart, and what patterns emerged
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The second chart that you will create and include will show another trend over time of your variable/topic/interest.
+Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!).
+Here are some requirements to help guide your design:
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
+-   Show more than one, but fewer than \~10 trends
+    -   For example, two books, or 5 different mediums
+-   You must have clear x and y axis labels
+-   The chart needs a clear title 
+-   You need a legend for your different line colors and a clear - legend title In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
 
 When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
-```
+\`\`\``{r, echo = FALSE, code = readLines("chart2_example.R")}`
 
 ### Your Choice
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
+The last chart is up to you.
+It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more.
+Here are some requirements to help guide your design:
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
+-   You must have clear x and y axis labels
+-   The chart needs a clear title 
+-   You need a legend for your different line colors and a clear legend title
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
-```
-
-
+\`\`\``{r, echo = FALSE, code = readLines("chart2_example.R")}`

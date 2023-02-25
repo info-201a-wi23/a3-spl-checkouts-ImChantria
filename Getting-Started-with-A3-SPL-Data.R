@@ -4,6 +4,7 @@
 library("dplyr")
 library("stringr")
 library("ggplot2")
+library("plotly")
 
 # Exercise 1: Load the data
 # Download and unzip one or more of the SPL datasets and load here from a file path
@@ -29,11 +30,13 @@ spl_df <- read.csv("Cain_Checkouts_by_Title.csv", stringsAsFactors = FALSE)
   # Exercise 5: Then plot their checkouts by date, and include a title and x,y axes label
   # If needed, set x and y axis limits
   # Then share in the Discord channel #spl-data
-  ggplot(checkouts_per_month) +
+  cain_plot <- ggplot(checkouts_per_month) +
     geom_line(aes(x = date, y = total_checkouts)) +
     scale_y_continuous(limits = c(0, 500)) +
     labs(title = "Susan Cain Library Checkouts from January 2012 to January 2023", 
-         x = "Month", 
+         x = "Year", 
          y = "Total Checkouts")
+  
+  ggplotly(cain_plot, tooltip = "text")
   
   
