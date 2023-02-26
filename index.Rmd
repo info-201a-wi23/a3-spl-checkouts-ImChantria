@@ -18,10 +18,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Introduction
 
-For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a data set collected by the *City of Seattle Open Data Portal* from January 2012 to January 2023.
+For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a data set collected by the **City of Seattle Open Data Portal** from January 2012 to January 2023.
 Cain is best known for her books *Quiet: The Power of Introverts* (published on January 24, 2012) and *Bittersweet: How Sorrow and Longing Make Us Whole*, (published on April 5, 2022).
-As an avid reader and introvert, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life.
-I wanted to analyze these trends to draw conclusions about possible reasons why a certain period of time had a spike or drop in library checkouts and compare the numbers between these books to see which book is the most popular.
+As an avid reader and introvert, I naturally became gravitated to these books to gain a better understanding of myself, practice better self-love, and transform the way I view life.
+I wanted to analyze these trends to draw conclusions about possible reasons why a certain period of time had a spike or drop in library checkouts and also compare the numbers between these books to see which book is the most popular. 
 
 ### Summary Information
 
@@ -36,22 +36,27 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 
 Feel free to calculate and report values that you find relevant.
 
-Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts (865 total) from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole* (48 total.
+Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts (865 total) from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole* (48 total).
 
 ### The Dataset
 
-**Who collected/published the data? The data was collected and published**\
+**Who collected/published the data? The data was collected and published**
 The date was collected by the *City of Seattle Open Data Portal* and is updated monthly.
 This specific data set was collected from January 2012 to January 2023.
-**What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?**\
-The parameters of the data are Material Type, Title, Publisher, Number of Checkouts and Date, **How was the data collected or generated?**\
+
+**What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?**
+The parameters of the data are Material Type, Title, Publisher, Number of Checkouts and Date, **How was the data collected or generated?**
+
 Based on the *City of Seattle Open Data Portal* FAQ, data comes from multiple current and historical sources.
 Item checkouts of physical copies of books are sourced from the *Legrady artwork* archives while digital items are sourced from media vendors, which include *Overdrive, hoopla, Freegal and RBDigital*.
-**Why was the data collected?**\
+
+**Why was the data collected?**
 The data was collected to observe and compare trends between books written and published my author Susan Cain.
-**What, if any, ethical questions do you need to consider when working with this data?**\
+
+**What, if any, ethical questions do you need to consider when working with this data?**
 Will observing checkout data from these psychological books expose and stereotype certain individuals?
-**What are possible limitations or problems with this data?(at least 200 words**\
+
+**What are possible limitations or problems with this data?(at least 200 words**
 A major limitation from this data set is that it only collects data from library checkouts that were done at a Seattle Public Library, which is one of the few libraries to make its circulation data public. It does not take into account data of private libraries, data in the United States or data on a more global scale. This data set also does not include data of purchases made at a bookstore, which is where a large number of people obtain books. This can alter the way the data is presented by not providing an accurate representation of trends, especially when it comes to measuring popularity and success of the author. In addition, *Quiet* was published in 2012 while *Bittersweet* was published in 2022. Since *Quiet* has existed longer than *Bittersweet*, it makes sense that the library checkouts will be significantly higher for *Quiet* so we can't really conclude whether one book is better than the other. This data also cuts off on January 1, 2023, which can also be a huge limitation because *Bittersweet* was recently advertised by Oprah Winfrey in her March Book Club pick, so there is a possibility that there was a spike in library checkouts for this book this past month.
 
 ### First Trends Over Time Chart
@@ -63,7 +68,7 @@ cain_plot
 
 ### Second Trends Over Time Chart
 
-```{r echo = FALSE, warning = FALSE, warning = FALSE, message = FALSE, code = readLines ("chart1_example.R")}
+```{r chart1_example.R, echo = FALSE, warning = FALSE, message = FALSE, results = "hide", fig.keep = "all"}
 source('chart1_example.R')
 cain_plot_2
 ```
@@ -76,7 +81,7 @@ The 2020 pandemic may have played a role in digital checkouts because libraries 
 
 ### Third Trends Over Time Chart
 
-```{r echo = FALSE, warning = FALSE, message = FALSE, code = readLines ("chart2_example.R")}
+```{r chart2_example.R, echo = FALSE, warning = FALSE, message = FALSE}
 source('chart2_example.R')
 cain_plot_3
 ```
