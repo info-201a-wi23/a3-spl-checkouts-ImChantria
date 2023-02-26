@@ -74,7 +74,7 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readlines("Getting-Started-with-A3-SPL-Data.R")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide", fig.keep = "all" code = readLines("Getting-Started-with-A3-SPL-Data.R")}
 cain_plot
 ```
 
@@ -97,7 +97,6 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 
 ```{r chart1_example.R, echo = FALSE, warning = FALSE, message = FALSE, results = "hide", fig.keep = "all"}
-source('chart1_example.R')
 cain_plot_2
 ```
 This line plot shows the trend between physical and digital book checkouts from January 2012 to January 2023. Physical book checkouts (green line) spiked from 2012 to 2014 and slowly began decreasing as digital book checkouts (orange line) began to take over from 2017 to 2022. The physical book checkouts had a noticeable spike around 2022, which is during the time Cain released her second book. We may be able to infer that digital library checkouts increased as technology became more advanced. The 2020 pandemic may have played a role in digital checkouts because libraries were most likely closed during this time period.
@@ -114,7 +113,7 @@ Here are some requirements to help guide your design:
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readlines ("chart2_example.R"}
+```{r, echo = FALSE, code = readLines ("chart2_example.R"}
 cain_plot_3
 ```
 This bar chart shows the amount of library checkouts for each of Cain's books from January 2012 to January 2023. There were **48 total** checkouts for *Bittersweet* and **865 total** checkouts for *Quiet*. 
