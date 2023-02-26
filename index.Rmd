@@ -23,12 +23,6 @@ Cain is best known for her books *Quiet: The Power of Introverts* (published on 
 As an avid reader and introvert, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life.
 I wanted to analyze these trends to draw conclusions about possible reasons why a certain period of time had a spike or drop in library checkouts and compare the numbers between these books to see which book is the most popular.
 
-### References
-
-Seattle.(n.d.).
-Checkouts by Title.
-Retrieved from Seattle Open Data Portal
-
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
