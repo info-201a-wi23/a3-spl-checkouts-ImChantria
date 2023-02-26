@@ -63,7 +63,7 @@ cain_plot
 
 ### Second Trends Over Time Chart
 
-```{r echo = FALSE, code = readLines ("chart1_example.R")}
+```{r echo = FALSE, warning = FALSE, warning = FALSE, message = FALSE, code = readLines ("chart1_example.R")}
 source('chart1_example.R')
 cain_plot_2
 ```
@@ -74,9 +74,9 @@ The physical book checkouts had a noticeable spike around 2022, which is during 
 We may be able to infer that digital library checkouts increased as technology became more advanced.
 The 2020 pandemic may have played a role in digital checkouts because libraries were most likely closed during this time period.
 
- ### Third Trends Over Time Chart
+### Third Trends Over Time Chart
 
-```{r echo = FALSE, code = readLines ("chart2_example.R")}
+```{r echo = FALSE, warning = FALSE, message = FALSE, code = readLines ("chart2_example.R")}
 source('chart2_example.R')
 cain_plot_3
 ```
