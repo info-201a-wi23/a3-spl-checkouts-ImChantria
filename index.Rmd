@@ -35,7 +35,7 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 
 Feel free to calculate and report values that you find relevant.
 
-Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole*. 
+Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts (865 total) from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole* (48 total.
 
 ### The Dataset
 
