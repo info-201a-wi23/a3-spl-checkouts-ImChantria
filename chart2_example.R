@@ -29,8 +29,8 @@ combined_books <- diff_books %>%
 #Plot
 colors <- c("royalblue", "maroon")
 
-ggplot(combined_books, aes(x = Book, y = count, fill = Book)) +
+cain_plot_3 <- ggplot(combined_books, aes(x = Book, y = count, fill = Book)) +
   geom_bar(stat = "identity") +
   scale_fill_manual(values = colors) +
   labs(x = "Book", y = "Number of Checkouts", 
-       title = "Checkout Count for Susan Cain's Books from January 2012 to January 2023")
+       title = "Checkout Count for Susan Cain Books from January 2012 to January 2023")

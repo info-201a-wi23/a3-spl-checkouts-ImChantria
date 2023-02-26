@@ -21,7 +21,9 @@ I wanted to analyze these trends to draw conclusions about possible reasons why 
 
 ### References
 
-Seattle.(n.d.). Checkouts by Title. Retrieved from Seattle Open Data Portal
+Seattle.(n.d.).
+Checkouts by Title.
+Retrieved from Seattle Open Data Portal
 
 ### Summary Information
 
@@ -35,6 +37,8 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 -   How has the number of print book checkouts changed over time?
 
 Feel free to calculate and report values that you find relevant.
+
+Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole*. 
 
 ### The Dataset
 
@@ -50,7 +54,7 @@ The data was collected to observe and compare trends between books written and p
 **What, if any, ethical questions do you need to consider when working with this data?**\
 Will observing checkout data from these psychological books expose and stereotype certain individuals?
 **What are possible limitations or problems with this data?(at least 200 words**\
-A major limitation from this data set is that it only collects data from library checkouts that were done at a Seattle Public Library, which is one of the few libraries to make its circulation data public. It does not take into account data of private libraries, data in the United States or on a more global scale. This data set also does not include data of purchases made at a bookstore, which is where a large quantity of people obtain books. This can alter the way the data is presented by not providing an accurate representation of trends and success for this author. This data also cuts off on January 1, 2023, which can also affect the accuracy of the data because this book was recently advertised by Oprah Winfrey in her March Book Club pick.
+A major limitation from this data set is that it only collects data from library checkouts that were done at a Seattle Public Library, which is one of the few libraries to make its circulation data public. It does not take into account data of private libraries, data in the United States or data on a more global scale. This data set also does not include data of purchases made at a bookstore, which is where a large number of people obtain books. This can alter the way the data is presented by not providing an accurate representation of trends, especially when it comes to measuring popularity and success of the author. In addition, *Quiet* was published in 2012 while *Bittersweet* was published in 2022. Since *Quiet* has existed longer than *Bittersweet*, it makes sense that the library checkouts will be significantly higher for *Quiet* so we can’t really conclude whether one book is better than the other. This data also cuts off on January 1, 2023, which can also be a huge limitation because *Bittersweet* was recently advertised by Oprah Winfrey in her March Book Club pick, so there is a possibility that there was a spike in library checkouts for this book this past month.
 
 ### First Trends Over Time Chart
 
@@ -71,7 +75,10 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-\`\`\``{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}`
+```{r Getting-Started-with-A3-SPL-Data.R, echo = FALSE)}
+source('Getting-Started-with-A3-SPL-Data.R')
+cain_plot
+```
 
 ### Second Trends Over Time Chart
 
@@ -106,7 +113,7 @@ Here are some requirements to help guide your design:
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r Getting-Started-with-A3-SPL-Data.R, echo = FALSE)}
-source('Getting-Started-with-A3-SPL-Data.R')
-cain_plot
+```{r chart2_example.R, echo = FALSE}
+source('chart2_example.R')
+cain_plot_3
 ```
