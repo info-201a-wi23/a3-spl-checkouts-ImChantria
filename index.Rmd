@@ -57,12 +57,14 @@ A major limitation from this data set is that it only collects data from library
 ### First Trends Over Time Chart
 
 ```{r Getting-Started-with-A3-SPL-Data.R, echo = FALSE, warning = FALSE, message = FALSE, results = "hide", fig.keep = "all"}
+source('Getting-Started-with-A3-SPL-Data.R')
 cain_plot
 ```
 
 ### Second Trends Over Time Chart
 
 ```{r echo = FALSE, code = readLines ("chart1_example.R")}
+source('chart1_example.R')
 cain_plot_2
 ```
 
@@ -74,7 +76,8 @@ The 2020 pandemic may have played a role in digital checkouts because libraries 
 
  ### Third Trends Over Time Chart
 
-```{r echo = FALSE, code = readLines ("chart2_example.R"}
+```{r echo = FALSE, code = readLines ("chart2_example.R")}
+source('chart2_example.R')
 cain_plot_3
 ```
 
