@@ -14,16 +14,13 @@ editor_options:
 
 ### Introduction
 
-For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a dataset collected by the *City of Seattle Open Data Portal* from January 2012 to January 2023.
+For my research, I will be analyzing library checkout trends by New York Times bestselling author Susan Cain from a data set collected by the *City of Seattle Open Data Portal* from January 2012 to January 2023.
 Cain is best known for her books *Quiet: The Power of Introverts* (published on January 24, 2012) and *Bittersweet: How Sorrow and Longing Make Us Whole*, (published on April 5, 2022).
-As an avid reader, introvert and melancholic individual, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life.
-I wanted to analyze these trends to draw conclusions about possible reasons why a certain month or year had a spike or drop in library checkouts.
+As an avid reader and introvert, I naturally became gravitated to these books to gain a better understanding of myself and transform the way I view life. I wanted to analyze these trends to draw conclusions about possible reasons why a certain period of time had a spike or drop in library checkouts and compare the numbers between these books to see which book is the most popular.
 
 ### References
 
-Seattle.(n.d.).
-Checkouts by Title.
-Retrieved from Seattle Open Data Portal
+Seattle.(n.d.). Checkouts by Title. Retrieved from Seattle Open Data Portal
 
 ### Summary Information
 
@@ -105,6 +102,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 source('chart1_example.R')
 cain_plot_2
 ```
+This line plot shows the trend between physical and digital book checkouts from January 2012 to January 2023. Physical book checkouts (green line) spiked from 2012 to 2014 and slowly began decreasing as digital book checkouts (orange line) began to take over from 2017 to 2022. The physical book checkouts had a noticeable spike around 2022, which is during the time Cain released her second book. We may be able to infer that digital library checkouts increased as technology became more advanced. The 2020 pandemic may have played a role in digital checkouts because libraries were most likely closed during this time period.
 
 ### Line Plot of Library Checkouts
 
@@ -122,3 +120,4 @@ Here's an example of how to run an R script inside an RMarkdown file:
 source('chart2_example.R')
 cain_plot_3
 ```
+This bar chart shows the amount of library checkouts for each of Cain's books from January 2012 to January 2023. There were **48 total** checkouts for *Bittersweet* and **865 total** checkouts for *Quiet*. 
