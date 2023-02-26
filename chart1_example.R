@@ -26,6 +26,8 @@ author_sum <- author_df %>%
   summarize(Checkouts = sum(Checkouts))
 
 # Create line plot
+colors <- c("royalblue", "maroon")
+
 cain_plot_2 <- ggplot(author_sum, aes(x = date, y = Checkouts, color = UsageClass)) +
   geom_line() +
   scale_y_continuous(limits = c(0, 300)) +
