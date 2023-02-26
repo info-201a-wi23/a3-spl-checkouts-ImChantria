@@ -5,7 +5,9 @@ editor_options:
   markdown: 
     wrap: sentence
 ---
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
 ## Library Checkout Trends for author Susan Cain
 
 ### Chantria Im
