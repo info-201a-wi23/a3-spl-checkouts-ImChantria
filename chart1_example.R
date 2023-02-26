@@ -17,7 +17,6 @@ author_df <- spl_df %>%
   filter(str_detect(Creator, "Cain")) 
 
 # Filter for physical and digital usage class
-
 digital_physical <- author_df %>% 
   filter(UsageClass %in% c("Physical", "Digital"))
 
@@ -27,7 +26,7 @@ author_sum <- author_df %>%
   summarize(Checkouts = sum(Checkouts))
 
 # Create line plot
-ggplot(author_sum, aes(x = date, y = Checkouts, color = UsageClass)) +
+cain_plot_2 <- ggplot(author_sum, aes(x = date, y = Checkouts, color = UsageClass)) +
   geom_line() +
   scale_y_continuous(limits = c(0, 300)) +
   labs(x = "Year", y = "Total Checkouts", title = "Physical vs Digital Library Checkouts for all Susan Cain Books from 2012 to 2023")
