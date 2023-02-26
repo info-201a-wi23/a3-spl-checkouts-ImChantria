@@ -55,6 +55,7 @@ A major limitation from this data set is that it only collects data from library
 source('Getting-Started-with-A3-SPL-Data.R')
 cain_plot
 ```
+
 This line plot represents the trend of library checkouts for Susan Cain's books from January 2012 to 2023. Based on these findings, it appears that when Cain released her first book, the amount of checkouts slowly increased before having a slight drop in 2014 where it remain steady until 2022, which was when her second book was released.
 
 ### Second Trends Over Time Chart
