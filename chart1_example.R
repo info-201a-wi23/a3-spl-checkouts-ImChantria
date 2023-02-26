@@ -30,4 +30,4 @@ cain_plot_2 <- ggplot(author_sum, aes(x = date, y = Checkouts, color = UsageClas
   geom_line() +
   scale_y_continuous(limits = c(0, 300)) +
   labs(x = "Year", y = "Total Checkouts", title = "Physical vs Digital Library Checkouts for all Susan Cain Books from 
-       January 2012 to January 2023")
+  January 2012 to January 2023")
