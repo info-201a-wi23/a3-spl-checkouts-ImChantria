@@ -25,18 +25,7 @@ I wanted to analyze these trends to draw conclusions about possible reasons why 
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
--   What is the average number of checkouts for each item?
--   What is the month or year with the most/least checkouts for a book that you're interested in?
--   What is the month or year with the most/least checkouts for ebooks?
--   How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
-
-Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts (865 total) from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole* (48 total).
+Based on the data, we can see that Cain's book *Quiet: The Power of Introverts* has received noticeably more library checkouts (865 total) from 2015 to 2023 compared to *Bittersweet: How Sorrow and Longing Make Us Whole* (48 total). The month with the most library checkouts for *Quiet* was **July 2013** with **143** total while the most library checkouts for *Bittersweet* was **May 2022** with **247** total.
 
 ### The Dataset
 
@@ -86,5 +75,5 @@ source('chart2_example.R')
 cain_plot_3
 ```
 
-This bar chart shows the amount of library checkouts for each of Cain's books from January 2012 to January 2023.
+This bar chart shows the amount of library checkouts for two of Cain's books from January 2012 to January 2023.
 There were **48 total** checkouts for *Bittersweet* and **865 total** checkouts for *Quiet*.
