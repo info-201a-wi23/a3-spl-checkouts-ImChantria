@@ -94,7 +94,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 \`\`\``{r, echo = FALSE, code = readLines("chart2_example.R")}`
 
-### Your Choice
+### Line Plot of Library Checkouts
 
 The last chart is up to you.
 It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more.
@@ -106,4 +106,7 @@ Here are some requirements to help guide your design:
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-\`\`\``{r, echo = FALSE, code = readLines("chart2_example.R")}`
+```{r Getting-Started-with-A3-SPL-Data.R, echo = FALSE)}
+source('Getting-Started-with-A3-SPL-Data.R')
+cain_plot
+```
